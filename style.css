@@ -44,6 +44,35 @@ body {
     
    
 }
+ 
+    .cadinal-point{
+
+        position: absolute;
+        bottom: 0;
+        left: 1.5rem;
+    }
+
+    .speed{
+
+        position: absolute;
+        bottom: 0;
+        right: 1.5rem;
+    }
+
+.icon-right{
+    width: 90px;
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    
+    }
+    .icon-left{
+        width: 90px;
+        position: absolute;
+        left: 1rem;
+        top: 3rem;
+        
+        }
  .pascals{
      position: absolute;
      bottom: 0;
