@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.tittle{
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+.div-info{
+    display: flex;
+    flex-direction: row;
+}
+.icons{
+    width:120px ;
+    height: 100px;
+    position: absolute;
+    left: 5rem;
+    top: 3.5rem;
+    
+   
+}
+ .pascals{
+     position: absolute;
+     bottom: 0;
+     text-align: center;
+     right: 4rem;
+     left: 4rem;
+     margin-top: 1rem;
+     margin-bottom: -0.001rem;
+ }
+
+/* Responsive layout - makes a single column grid on mobile devices */
+@media (min-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
