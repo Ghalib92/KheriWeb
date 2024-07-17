@@ -15,7 +15,7 @@ body {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    height: 150px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +42,9 @@ body {
     position: absolute;
     left:3.5rem;
     top: 3.5rem;
+    .colored-image {
+        filter: sepia(1) hue-rotate(90deg) saturate(200%);
+    }
     
    
 }
@@ -81,7 +84,7 @@ body {
      right: 4rem;
      left: 2rem;
      margin-top: 1rem;
-     margin-bottom: -0.001rem;
+     margin-bottom: 0.5rem;
      text-wrap: nowrap;
  }
 
@@ -123,8 +126,88 @@ body {
             width: 50px;
             position: absolute;
             bottom: 0;
-            margin-left: 2rem;
-            
+            margin-left: rem;
+            text-wrap: nowrap;
             font-size: 16px;
         }
-         
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #005B9F;
+            color: white;
+        }
+        
+        .header-left span {
+            margin-right: 20px;
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-right button {
+            margin-right: 20px;
+            background-color: white;
+            color: #005B9F;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .header-right .icons {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-right .icons i {
+            margin-left: 10px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #007ACC;
+            color: white;
+        }
+        
+.tabs {
+    display: flex;
+    color: aqua;
+}
+
+.tab {
+    margin-right: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: white;
+    color: #007ACC;
+}
+        .tabs {
+            display: flex;
+            padding: 10px;
+        }
+        
+        .tab {
+            margin-right: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        
+        .tab.active {
+            background-color: white;
+            color: #007ACC;
+        }
+        
+       .tabs a{
+text-decoration: none;
+color: aqua;
+position: absolute;
+right: 1rem;
+
+       }  
